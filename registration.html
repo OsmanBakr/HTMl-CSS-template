@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+
+
+
+<style>
+
+        .side-nav {
+           float: left;
+            background-color: #191b1f;
+            height: 100vh;
+            width: 230px;
+            padding-top: 0%;
+            display: flex;
+            flex-direction: column;
+        }
+
+       .menu {
+            margin: 20px;
+    
+        }  
+
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            
+           
+        }
+        
+        a:hover {
+            background-color: rgb(19, 18, 18);
+            color: rgb(148, 145, 145);
+            font-size: 20px;
+
+        }
+
+        li {
+            display: flex;
+            list-style-type: none;
+           border-bottom: 1px solid rgb(97, 94, 94);
+        }
+
+        
+        h4 {
+            font-size: 30px;
+            margin: 0;
+            padding: 20px;
+            border-bottom: 2px solid rgb(97, 94, 94);
+            color: chocolate;
+            text-align: center;
+         
+        }
+
+        .imgIcon {
+           
+           padding: 5px;
+           width: 45px;
+           }  
+        
+           .imgIcon:hover {
+           width: 50px;
+           border: 2px solid rgb(97, 94, 94);           
+             }
+
+            
+             html {
+                background: #b4b4d1;
+            }
+            
+            .body-content {
+                padding-top: 5%;
+            }
+            
+            .container {
+                float: left;
+                width: 350px;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 30%;
+                border: 2px solid white;
+                border-radius: 15px;
+                background: #232329;
+                box-shadow: 0 0 25px #6c6cc9 ;
+            }
+
+        
+
+            
+            h2 {
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .form-item {
+                margin: 5px;
+                padding-bottom: 10px;
+                display: flex;
+            }
+            
+            .form-item input {
+                width: 150px;
+                height: 30px;
+                border: 2px solid #e1dede69;
+                border-radius: 5px;
+                background: white;
+                color: black;
+                text-align: left;
+                margin: 0 5px;
+            }
+            
+            .form-item-email {
+                margin: 0 5px;
+                padding-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .form-item-email input {
+                height: 30px;
+                border: 2px solid #e1dede69;
+                border-radius: 5px;
+                background: white;
+                color: black;
+                text-align: left;
+                margin: 0 5px;
+            }
+            
+            .form-item-password {
+                margin: 5px;
+                padding-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .form-item-password input {
+                height: 30px;
+                border: 2px solid #e1dede69;
+                border-radius: 5px;
+                background: white;
+                color: black;
+                text-align: left;
+                margin: 5px 5px;
+            }
+            
+            .form-item-gender{
+            display: flex;
+            align-items: center;  
+            font-size: 14px;
+            color: rgb(161, 100, 9);
+            margin: 10px 0;                     
+        }
+        .form-item-gender label{
+            margin: 5px 15px;
+        }
+
+
+        .form-item-DOB label{
+            font-size: 14px;
+            margin: 5px 15px;
+            color: chocolate;
+        }
+        .form-item-DOB input{
+            border-radius: 5px;
+            
+        }
+
+            .remember-box {
+                margin: auto;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                color: white;
+                display: flex;
+            }
+            
+            .remember-box a {
+                text-decoration: none;
+                color: white;
+                margin-left: 30px;
+            }
+            
+            .remember-box a:hover {
+                color: grey;
+            }
+
+
+
+            
+            .form-btns {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                padding: 10px 0;
+            }
+            
+            .form-btns button {
+                margin: auto;
+                font-size: 20px;
+                padding: 5px 15px;
+                border: 0;
+                border-radius: 15px;
+                color: rgb(75, 61, 61);
+                background: #fbba50;
+                width: 280px;
+                cursor: pointer;
+            }
+            
+            
+            .form-btns button:hover {
+                background: #000000;
+                color: chocolate;
+            }
+            
+            .options {
+                padding-top: 15px;
+                margin: auto;
+                color: white;
+                font-size: 13px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .options a {
+                font-size: 13px;
+                color: white;
+            }
+            
+            .options a:hover {
+                color: rgb(167, 165, 165);
+            }
+            
+            p {
+                text-align: center;
+                font-size: 12px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+            }
+             
+        
+</style>
+
+
+
+
+</head>
+
+
+<body  style="margin: 0%;">
+    
+    <div class="side-nav">
+      
+        
+        <h4> Menu </h4>
+     
+        <ul>
+            
+            <a href="home.html">                
+                <li>
+                    <img src="img/home.png" class="imgIcon">
+                    <span class="menu">Home</span> </li>
+            </a>
+            <a href="registration.html">
+                <li>
+                    <img src="img/registration.png" class="imgIcon">
+                    <span class="menu">Registration</span></li>
+            </a>
+            <a href="login.html">
+                <li>
+                    <img src="img/login.png" class="imgIcon">
+                    <span class="menu">Login</span></li>
+            </a>
+            <a href="contact.html">
+                <li>
+                    <img src="img/contact.png" class="imgIcon">
+                    <span class="menu">Contacts</span></li>
+            </a>
+        
+
+        </ul>
+
+        
+    </div>
+
+
+        <div class="body-content">
+    
+            <div class="container">
+    
+                <h2>Sign Up</h2>
+                <div class="login-form">
+                    <form action="ThankYou.html">
+                        <div class="form-item">
+                            <input type="text" name="userName" id="userName" placeholder="First Name">
+                            <input type="text" name="userName" id="userName" placeholder="Last Name">
+    
+                        </div>
+                        <div class="form-item-email">
+                            <input type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-item-password">
+                            <input type="password" name="passWord" id="password" placeholder="Password">
+                            <input type="password" name="passWord" id="confirmPassword" placeholder="Confirm Password">
+    
+                        </div>
+
+                        <div class="form-item-gender">
+                            <label for="DOB">Gender:</label>
+                            Male<input type="radio" name="gender" id="male" value="male" >
+                            Female<input type="radio" name="gender" id="female" value="female" >
+    
+                        </div>
+
+                        <div class="form-item-DOB">
+                            <label for="DOB">DOB:</label>
+                            <input type="date" name="DOB" id="DOB" >
+                        </div>
+
+                        <div class="remember-box">
+                            <input type="checkbox" name="remember" id="remember">
+                            <p>I accept the Terms of Use & Privacy Policy</p>
+                        </div>
+                        <div class="form-btns">
+    
+                            <button class="signup" type="submit" >Sign Up</button>
+                            <div class="options">
+                                Already have an account?<a href="login.html">Login here</a>
+                            </div>
+    
+    
+                        </div>
+                    </form>
+                    <p>Copyright &copy; OsmanBakr</p>
+                </div>
+            </div>
+        </div>
+    
+       
+    
+   
+    
+
+
+
+
+
+
+</body>
+</html>

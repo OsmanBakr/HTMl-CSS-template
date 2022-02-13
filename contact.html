@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+
+
+
+<style>
+  
+  
+         html {
+                background: #b4b4d1;
+            }
+
+         .side-nav {
+           float: left;
+            background-color: #191b1f;
+            height: 100vh;
+            width: 15%;
+            padding-top: 0%;
+            display: flex;
+            flex-direction: column;
+        }
+
+       .menu {
+            margin: 10%;
+            width: 60%;
+    
+        }  
+
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 120%;
+            
+           
+        }
+        
+        a:hover {
+            background-color: rgb(19, 18, 18);
+            color: rgb(148, 145, 145);
+            font-size: 125%;
+
+        }
+
+        li {
+            display: flex;
+            list-style-type: none;
+           border-bottom: 1px solid rgb(97, 94, 94);
+        }
+
+        
+        h4 {
+            font-size: 30px;
+            margin: 0;
+            padding: 20px;
+            border-bottom: 2px solid rgb(97, 94, 94);
+            color: chocolate;
+            text-align: center;
+         
+        }
+
+        .imgIcon {
+           
+           padding: 2%;
+           width: 17%;
+           }  
+        
+           .imgIcon:hover {
+           width: 50px;
+           border: 2px solid rgb(97, 94, 94);           
+             }
+
+             .contactIcon {
+    
+           width: 7%;
+           
+           }  
+             
+        
+        
+
+
+            
+             
+        .container {
+            float: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+             width: 80%;
+            padding: 15px;
+        }
+        
+        h2 {
+            color: #403333;
+        }
+        
+        .contact-info {
+            display: flex;
+            width: 90%;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            box-shadow: 0 0 15px grey;
+            text-align: center;
+            color: chocolate;
+            border-radius: 10px;
+            padding: 2px;
+            border: 2px solid rgb(2, 1, 1);
+            background-color: rgb(166, 187, 226);
+
+        }
+        
+        .details {
+           
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            background: black;
+            color: white;
+            border-radius: 10px;
+            padding: 2%;
+            box-shadow: 0 0 15px rgb(46, 119, 196);
+            border: 2px solid white;
+
+        }
+        .contact-items{
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: chocolate;
+        }
+        .contact-items-wrapper{
+            padding: 2%;
+            width: 80%;
+            
+        }
+        
+        .details h3 {
+            text-align: center;
+        }
+        
+        .details p {
+            font-size: 150%;
+            margin-left: 2%;
+            width: 100%;
+        }
+
+        .details p a{
+        color: chocolate;
+        }
+        .details p a:hover{
+          font-size: 130%;  
+        color: rgb(160, 154, 154);
+        }
+
+        
+        
+        input {
+            margin: 5px 15px;
+            height: 25px;
+        }
+        
+        textarea {
+            height: 150px;
+            margin: 5px 15px;
+        }
+        
+         .button {
+            margin: 5px 15px;
+            width: 80px;
+            background: #fbba50;
+            padding: 3px 10px;
+            border: 0;
+            border-radius: 5px;
+            color:rgb(75, 61, 61);
+            font-size: 15px;
+        }
+
+        .button:hover {
+            margin: 5px 15px;
+            width: 80px;
+            background: black;
+            padding: 3px 10px;
+            border: 0;
+            border-radius: 5px;
+            color:chocolate;
+            font-size: 15px;
+        }
+
+             
+        
+</style>
+
+
+
+
+</head>
+
+
+<body  style="margin: 0%;">
+    
+    <div class="side-nav">
+      
+        
+        <h4> Menu </h4>
+     
+        <ul>
+            <a href="home.html">
+                <li>
+                    <img src="img/home.png" class="imgIcon">
+                    <span class="menu">Home</span> </li>
+            </a>
+            <a href="registration.html">
+                <li>
+                    <img src="img/registration.png" class="imgIcon">
+                    <span class="menu">Registration</span></li>
+            </a>
+            <a href="login.html">
+                <li>
+                    <img src="img/login.png" class="imgIcon">
+                    <span class="menu">Login</span></li>
+            </a>
+            <a href="contact.html">
+                <li>
+                    <img src="img/contact.png" class="imgIcon">
+                    <span class="menu">Contacts</span></li>
+            </a>
+        
+
+        </ul>
+
+        
+    </div>
+
+
+
+  <div class="container">
+        <h2>Get in Touch</h2>
+        <div class="contact-info">
+            <form action="home.html">
+                <h3>Write Us</h3>
+                <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="tel" name="tel" id="tel" placeholder="tel: XXX XXX XXXX" required>
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message Here..."></textarea>
+                <button  class="button button5" type="submit">Send</button>
+            </form>
+            <div class="details">
+                <h3>Contact Us</h3>
+                <div class="contact-items-wrapper">
+                    <div class="contact-items">
+                        <img src="img/home.png" class="contactIcon">
+                        <p><strong>Address:</strong>  Aelxandria-Egypt</p>
+                    </div>
+                    <div class="contact-items">
+                        <img src="img/phone.png" class="contactIcon">
+                        <p><strong>Phone:</strong> 01000000000</p>
+                    </div>
+                    <div class="contact-items">
+                        <img src="img/email.png" class="contactIcon">
+                        <p><strong>Email:</strong><a href="mailto:ITIinfo@iti.gov.eg"> ITIinfo@iti.gov.eg</a> </p>
+                    </div>
+                    <div class="contact-items">
+                        <img src="img/website.png" class="contactIcon">
+                        <p><strong>Website:</strong><a href="https://www.iti.gov.eg/iti/home" target="blanc" > ITI</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

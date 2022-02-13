@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+
+
+
+<style>
+  
+  
+         
+         html {
+                background: #b4b4d1;
+                scroll-behavior: smooth;
+            }
+
+         .side-nav {
+           float: left;
+            background-color: #191b1f;
+            height: 100vh;
+            width: 230px;
+            padding-top: 0%;
+            display: flex;
+            flex-direction: column;
+        }
+
+       .menu {
+            margin: 20px;
+    
+        }  
+
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            
+           
+        }
+        
+        a:hover {
+            background-color: rgb(19, 18, 18);
+            color: rgb(148, 145, 145);
+            font-size: 20px;
+
+        }
+
+        li {
+            display: flex;
+            list-style-type: none;
+           border-bottom: 1px solid rgb(97, 94, 94);
+        }
+
+        
+        h4 {
+            font-size: 30px;
+            margin: 0;
+            padding: 20px;
+            border-bottom: 2px solid rgb(97, 94, 94);
+            color: chocolate;
+            text-align: center;
+         
+        }
+
+        .imgIcon {
+           
+           padding: 5px;
+           width: 45px;
+           }  
+        
+           .imgIcon:hover {
+           width: 50px;
+           border: 2px solid rgb(97, 94, 94);           
+             }
+
+            
+
+
+
+
+
+.background {
+  background: rgba(2, 2, 2, 0.774) ;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.firstSection {
+  height: 100vh;
+}
+
+.box-main {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
+  color: white;
+  margin: auto;
+  padding: 5%;
+}
+
+.firstHalf {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-bg {
+  font-size: 25px;
+  margin: 8px;
+  text-align: center;
+  font-weight: 700;
+  color: chocolate;
+}
+
+.text-sm {
+  font-style: 15px;
+  margin: 8px;
+  text-align: center;
+ 
+}
+
+.secondHalf {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons .btn {
+  font-size: 18px;
+  padding: 8px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: #fbba50;
+  color: rgb(75, 61, 61);
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #000000;
+ color: chocolate;
+}
+
+.secondHalf img {
+  width: 50%;
+  border: 2px solid rgb(88, 75, 75);
+  border-radius: 50px;
+}
+
+.section-down {
+  height: fit-content;
+  flex-direction: column-reverse;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  width: 80%;
+  margin: auto;
+  
+}
+
+
+.thumbnail {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.imgFluid {
+  height: 200px;
+  width: 200px;
+  border: 0;
+  box-shadow: 0 0 12px grey;
+  border-radius: 150px;
+  
+}
+
+h3{
+  color:brown;
+  font-weight: 700;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: white;
+    padding-top: 5px;
+    
+}
+
+  
+
+
+             
+        
+</style>
+
+
+
+
+</head>
+
+
+<body  style="margin: 0%;">
+    
+    <div class="side-nav">
+      
+        
+        <h4> Menu </h4>
+     
+        <ul>
+            <a href="home.html">
+                <li>
+                    <img src="img/home.png" class="imgIcon">
+                    <span class="menu">Home</span> </li>
+            </a>
+            <a href="registration.html">
+                <li>
+                    <img src="img/registration.png" class="imgIcon">
+                    <span class="menu">Registration</span></li>
+            </a>
+            <a href="login.html">
+                <li>
+                    <img src="img/login.png" class="imgIcon">
+                    <span class="menu">Login</span></li>
+            </a>
+            <a href="contact.html">
+                <li>
+                    <img src="img/contact.png" class="imgIcon">
+                    <span class="menu">Contacts</span></li>
+            </a>
+        
+
+        </ul>
+
+        
+    </div>
+
+
+   
+
+
+    <section class="background firstSection" id="home">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-bg">SWE Fundamentals-Information Technology Institute</p>
+                <p class="text-sm">ITI Intensive Code Camp – Software Engineering
+                    Fundamentals Specialization - is a product based
+                    program that will empower you to learn the basics of
+                    software engineering, , and web development and will
+                    qualify you to various specializations tracks to continue
+                    your learning journey.</p>
+                
+                <div class="buttons">
+                    <a href="#content-block"class="btn"> Read More</a>
+                </div>
+
+            </div>
+            <div class="secondHalf">
+                <img src="img/logo.png" alt="ITI Logo">
+            </div>
+        </div>
+
+        
+    </section>
+
+     <div id="content-block" class="content-block">
+
+    <section class="section-down">
+        <div class="para">
+            <p class="text-bg">Course Content</p>
+            <p class="text-sm">Computer Systems Foundation - Software Engineering Foundation - Web Development Foundation - Employability Skills </p>
+        </div>
+
+
+        <div class="thumbnail">
+            <img class="imgFluid" src="img/content.jpg" alt="logo Image" >
+        </div>
+    </section>
+
+    <div class="hr-end">
+        <hr>
+    </div>
+
+    <section class="section-down">
+        <div class="para">
+            <p class="text-bg"> Before You Apply </p>
+            <p class="text-sm"> <h3>These topics will be discussed with you in the interviews:</h3>
+              • Interview will include general Computer
+              Systems knowledge, General Web
+              knowledge & General MS Office usageknowledge.
+              </p>
+        </div>
+
+
+        <div class="thumbnail">
+            <img class="imgFluid" src="img/requirements.jpg" alt="logo Image">
+        </div>
+    </section>
+
+    </div>
+
+
+    <hr>
+
+    <section class="section-down">
+        <div class="para">
+            <p class="text-bg"> About Us </p>
+            <p class="text-sm">Founded over two decades ago, the Information Technology Institute (ITI) provides world-class professional human capacity building programs,
+               hands-on training and an exposure to the latest technology trends for university students and graduates, academia and professionals, 
+               in collaboration with a wide network of partners from the ICT industry, the academia, and the community. Headquartered in Smart Village, and other five branches in Cairo,
+                Alexandria, Mansoura, Assiut and Ismailia, ITI supplies local, regional and international markets with top notch trained professionals in the various IT fields.
+                 The close relation with local and international industry players helps ITI to provide around 82% of graduates with employment opportunities, four weeks prior to their graduation and around 95% within six weeks after their graduation.
+                  Through ITI talent accelerating model,
+                  several programs and initiatives are designed and implemented within three main pillars: Professional Development Skill Development Learning Outreach 
+            </p>
+        </div>
+
+
+        <div class="thumbnail">
+            <img class="imgFluid" src="img/about.png" alt="logo Image" >
+        </div>
+    </section>
+
+      <div class="buttons"> <a href="#home" class="btn"> Back to the top</a> </div>
+    
+    
+      <div class="footer background">
+        <p>Copyright &copy; OsmanBakr</p>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
